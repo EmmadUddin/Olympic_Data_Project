@@ -93,12 +93,12 @@ with st.container():
     
     #creating visuals
     chart_data = plt.plot(each_medal_df.Year, each_medal_df.Gold, 'b-o'),
-    #columns=['a', 'b', 'c'])
+    columns=['a', 'b', 'c'])
     right.header('Line Chart Visual')
     right.line_chart(chart_data)
     
-    #left.header('Bar Chart Visual')
-    #left.bar_chart(chart_data)
+    left.header('Bar Chart Visual')
+    left.bar_chart(chart_data)
     
     arr = np.random.normal(1, 1, size=100)
     fig, ax = plt.subplots()
@@ -107,8 +107,8 @@ with st.container():
     right.header('Histogram Visual')
     right.pyplot(fig)
     
-    #left.header('Area Chart Visual')
-    #left.area_chart(chart_data)
+    left.header('Area Chart Visual')
+    left.area_chart(chart_data)
 
 
 
