@@ -7,7 +7,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 
@@ -92,8 +92,9 @@ with st.container():
     
     
     #creating visuals
-    chart_data = plt.plot(each_medal_df.Year, each_medal_df.Gold, 'b-o'),
-    columns=['a', 'b', 'c'])
+    chart_data = pd.DataFrame(
+        np.random.randn(20, 3),
+        columns=['a', 'b', 'c'])
     right.header('Line Chart Visual')
     right.line_chart(chart_data)
     
